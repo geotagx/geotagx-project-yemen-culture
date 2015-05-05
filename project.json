@@ -206,6 +206,18 @@
 			"answer":{
 				"saved_as":"geolocation"
 			}
+		},
+		{
+			"id":12,
+			"title":"Pick a phrase",
+			"type":"single_choice",
+			"answer":{
+				"saved_as":"pickAPhrase",
+				"choices":[
+					{"Hello":"Hello, World!"},
+					{"World":"World, Hello!"}
+				]
+			}
 		}
 	]
 }
