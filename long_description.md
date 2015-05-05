@@ -2,11 +2,11 @@ GeoTag-X project sample
 =======================
 
 This is a sample project that highlights features available in the project template.
-You can view its source code [here][https://github.com/geotagx/geotagx-project-sample].
-
+You can view its source code [here](https://github.com/geotagx/geotagx-project-sample).
 
 
 Project structure:
+
 - AUTHORS contains the names, and possibly contact information, for all project authors.
 - help/ contains markdown files that provide help for a specific question.
 - LICENSE.md contains the project's license.
