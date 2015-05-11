@@ -9,7 +9,7 @@
 			"title":"Can you see any water in the photo?",
 			"type":"binary",
 			"answer":{
-				"saved_as":"water"
+				"saved_as":"isWaterVisible"
 			},
 			"branch":[
 				{"yes":2},
@@ -18,41 +18,56 @@
 		},
 		{
 			"id":2,
-			"title":"Can you see small pools of water?",
-			"type":"binary",
+			"title":"What color is the water?",
+			"type":"single_choice",
 			"answer":{
-				"saved_as":"waterSmall"
-			},
-			"branch":[
-				{"no":4}
-			]
+				"saved_as":"waterColor",
+				"choices":[
+					{"Red":"Red"},
+					{"AquaBlue":"Aqua Blue"},
+					{"Green":"Green"},
+					{"Orange":"Orange"},
+					{"Other":"Other"}
+				]
+			}
 		},
 		{
 			"id":3,
-			"title":"Are these small pools of water near human shelters or a settlement?",
+			"title":"Can you see small pools of water?",
 			"type":"binary",
 			"answer":{
-				"saved_as":"waterSmallShelter"
-			},
-			"branch":7
-		},
-		{
-			"id":4,
-			"title":"Can you see a large body of water?",
-			"type":"binary",
-			"answer":{
-				"saved_as":"waterLarge"
+				"saved_as":"smallPoolsOfWaterVisible"
 			},
 			"branch":[
-				{"no":6}
+				{"no":5}
 			]
 		},
 		{
+			"id":4,
+			"title":"Are these small pools of water near human shelters or a settlement?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"smallPoolsOfWaterNearShelters"
+			},
+			"branch":8
+		},
+		{
 			"id":5,
+			"title":"Can you see a large body of water?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"largeBodyOfWaterVisible"
+			},
+			"branch":[
+				{"no":7}
+			]
+		},
+		{
+			"id":6,
 			"title":"Can you see any signs of fast moving water?",
 			"type":"multiple_choice",
 			"answer":{
-				"saved_as":"waterLargeFast",
+				"saved_as":"signsOfFastMovingWater",
 				"choices":[
 					{"Peaks":"White peaks in the water"},
 					{"Rough":"Rough water surface"},
@@ -61,11 +76,11 @@
 			}
 		},
 		{
-			"id":6,
+			"id":7,
 			"title":"Can you see any of the following flood protection measures?",
 			"type":"multiple_choice",
 			"answer":{
-				"saved_as":"waterLargeProtection",
+				"saved_as":"floodProtectionVisible",
 				"choices":[
 					{"Sandbags":"Sandbags"},
 					{"Barriers":"Makeshift barriers"},
@@ -75,22 +90,22 @@
 			}
 		},
 		{
-			"id":7,
+			"id":8,
 			"title":"Can you see any sources of drinking water?",
 			"type":"binary",
 			"answer":{
-				"saved_as":"waterDrinking"
+				"saved_as":"sourcesOfDrinkingWaterVisible"
 			},
 			"branch":[
-				{"no":"finish"}
+				{"no":11}
 			]
 		},
 		{
-			"id":8,
+			"id":9,
 			"title":"Which sources of drinking water can you see?",
 			"type":"multiple_choice",
 			"answer":{
-				"saved_as":"waterDrinkingSources",
+				"saved_as":"sourcesOfDrinkingWater",
 				"choices":[
 					{"Pipes":"Water pipes and access taps"},
 					{"Tankers":"Water tankers"}
@@ -98,19 +113,19 @@
 			}
 		},
 		{
-			"id":9,
+			"id":10,
 			"title":"Have they been affected by the flood waters?",
 			"type":"binary",
 			"answer":{
-				"saved_as":"waterDrinkingSourcesAffected"
+				"saved_as":"sourcesOfDrinkingWaterAffected"
 			}
 		},
 		{
-			"id":10,
-			"title":"What more can you see?",
+			"id":11,
+			"title":"Which animals do you see?",
 			"type":"illustrated_multiple_choice",
 			"answer":{
-				"saved_as":"whatCanYouSee",
+				"saved_as":"animalsVisible",
 				"choices":[
 					{
 						"label":"Cattle",
@@ -200,23 +215,11 @@
 			}
 		},
 		{
-			"id":11,
+			"id":12,
 			"title":"Can you geo-localize the photo?",
 			"type":"geotagging",
 			"answer":{
 				"saved_as":"geolocation"
-			}
-		},
-		{
-			"id":12,
-			"title":"Pick a phrase",
-			"type":"single_choice",
-			"answer":{
-				"saved_as":"pickAPhrase",
-				"choices":[
-					{"Hello":"Hello, World!"},
-					{"World":"World, Hello!"}
-				]
 			}
 		}
 	]

@@ -1,0 +1,83 @@
+{
+	"tutorial":[
+		{
+			"image":"http://i.imgur.com/yZrJpI3.jpg",
+			"image_source":"http://imgur.com/r/earthporn/yZrJpI3",
+			"assertions":{
+				"1":{
+					"expects":"yes",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"yes":"Well done! There is a water-body in this photo.",
+						"no":"Try again. Are you sure there is no water? Check out the help for information on what you should be looking for."
+					}
+				},
+				"2":{
+					"expects":"aquablue",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"aquablue":"Correct! The water has an aqua blue hue."
+					}
+				},
+				"3":{
+					"expects":"no",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"no":"Well done! There are no small pools of water in this photo.",
+						"yes":"Whoa! Are you sure that you see a small pool of water? Check out the help for information on what you should be looking for."
+					}
+				},
+				"5":{
+					"expects":"yes",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"yes":"Correct! You are looking at the North Pacific Ocean, which is a (very) large water body.",
+						"no":"Hmmm, are you sure? Check out the help for information on what you should be looking for."
+					}
+				},
+				"6":{
+					"expects":"peaks, rough",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"peaks, rough":"Correct! There are white peaks along the shore. The ocean also has as a rough surface which indicates a turbulent flow usually caused by fast moving water.",
+						"peaks":"Correct! But is that all you see?",
+						"rough":"Correct! But is that all you see?",
+						"swirling":"Do you really see any objects swirling around?",
+						"peaks, rough, swirling":"Are you sure you see all these signs of fast moving water?"
+					}
+				},
+				"7":{
+					"expects":"none",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"none":"Correct! There are no flood protection measures in this photo."
+					}
+				},
+				"8":{
+					"expects":"no",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"no":"Well done! There are no visible sources of drinking water in this photo.",
+						"yes":"Are you sure you can see sources of drinking water? If you are not sure what to look for, check out the help for more information."
+					}
+				},
+				"11":{
+					"expects":"none",
+					"default_message":"Are you sure you can see an animal? If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"none":"Correct! There are no animals in this photo.",
+						"unknown":"Try again! If you are not sure what to look for, check out the help for more information.",
+						"notclear":"Try again! If you are not sure what to look for, check out the help for more information."
+					}
+				},
+				"12":{
+					"expects":"notclear",
+					"default_message":"Due to the nature of this question, the only accepted answer is IT'S NOT CLEAR.",
+					"messages":{
+						"notclear":"You may know the answer to this question but there is more than one expected answer due to the variability of points that make up the polygon submitted by a user."
+					}
+				}
+			}
+		}
+	]
+}
