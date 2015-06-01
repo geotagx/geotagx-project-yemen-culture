@@ -10,5 +10,5 @@ It is meant to serve as an example for users that wish to create their own GeoTa
 For more information, check out the project's full [description][long_description].
 
 
-[geotagx-project-template]:https://github.com/spMohanty/geotagx_project_template
+[geotagx-project-template]:https://github.com/geotagx/geotagx-project-template
 [long_description]:long_description.md
