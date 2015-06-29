@@ -71,10 +71,10 @@
 					}
 				},
 				"12":{
-					"expects":"notclear",
-					"default_message":"Due to the nature of this question, the only accepted answer is IT'S NOT CLEAR.",
+					"expects":"unknown",
+					"default_message":"Due to the nature of this question, the only accepted answer is I DON'T KNOW.",
 					"messages":{
-						"notclear":"You may know the answer to this question but there is more than one expected answer due to the variability of points that make up the polygon submitted by a user."
+						"unknown":"You may know the answer to this question but there is more than one expected answer due to the variability of points that make up the polygon submitted by a user."
 					}
 				}
 			}
