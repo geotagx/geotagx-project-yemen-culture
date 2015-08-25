@@ -37,7 +37,7 @@
 		},
 		{
 			"id":4,
-			"title":"Does the site appear damaged?",
+			"title":"Do you see any damage to the building that is not caused by general deterioration over time?",
 			"type":"binary",
 			"answer":{
 				"saved_as":"damage"
