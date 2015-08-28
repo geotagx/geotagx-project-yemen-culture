@@ -1,14 +1,7 @@
-GeoTag-X sample project
-=======================
+# Yemeni Cultural Heritage at Risk
 
-This is a sample project that highlights the features available in the project [template][geotagx-project-template].
-You can try a live version of this project [here](http://geotagx.org/project/sample).
+**Help us find and geotag photos of Yemeni cultural heritage sites**
 
-It is meant to serve as an example for users that wish to create their own GeoTag-X projects.
+This is a GeoTag-X project that is part of an analysis on [Yemeni cultural sites](http://geotagx.org/project/category/yemeniculturalheritageatrisk/). You may participate in this project by visiting [http://geotagx.org/project/yemenculture](http://geotagx.org/project/yemenculture).
 
-
-For more information, check out the project's full [description][long_description].
-
-
-[geotagx-project-template]:https://github.com/geotagx/geotagx-project-template
-[long_description]:long_description.md
+For more information, please refer to the [detailed description](long_description.md).
