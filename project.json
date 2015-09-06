@@ -16,7 +16,12 @@
 		{
 			"question":"What is the name of the site shown in this photo?",
 			"key":"name",
-			"type":"text"
+			"type":"text",
+			"branch":{
+				"":"end",
+				"NotClear":"end",
+				"Unknown":"end"
+			}
 		},
 		{
 			"question":"What is its wikipedia page?",
