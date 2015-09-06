@@ -4,7 +4,7 @@
 			"image":"http://static01.nyt.com/images/2015/06/13/world/13YEMEN1/13YEMEN1-facebookJumbo.jpg",
 			"image_source":"http://www.nytimes.com/2015/06/13/world/middleeast/yemen-sana-explosion-houthis-saudi-arabia.html",
 			"assertions":{
-				"1":{
+				"heritage":{
 					"expects":"yes",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -12,7 +12,7 @@
 						"no":"Try again. Are you sure there is no built cultural heritage in this photo? Check out the help for information on what you should be looking for."
 					}
 				},
-				"2":{
+				"name":{
 					"autocomplete":true,
 					"expects":"Sana'a",
 					"default_message":"This photo was taken in Sana'a, Yemen. Look at the help for tips on how to identify a site using Google searches",
@@ -20,14 +20,14 @@
 						"Sana'a":"Correct! This is a photo of the city of Sana'a in Yemen."
 					}
 				},
-				"3":{
+				"wikipedia":{
 					"expects":"https://en.wikipedia.org/wiki/Sana%27a",
 					"default_message":"Sana'a has a Wikipedia page here: https://en.wikipedia.org/wiki/Sana%27a. Check out the help for tips on finding this page.",
 					"messages":{
 						"https://en.wikipedia.org/wiki/Sana%27a":"Well done! This is the wikipedia page for Sana'a"
 					}
 				},
-				"4":{
+				"damage":{
 					"expects":"yes",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -35,7 +35,7 @@
 						"no":"Hmmm, are you sure? Check out the help for information on what you should be looking for."
 					}
 				},
-				"5":{
+				"geolocation":{
 					"skip":true
 				}
 			}

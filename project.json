@@ -3,54 +3,36 @@
 	"short_name":"yemenculture",
 	"description":"Help us find and geotag photos of Yemeni cultural heritage sites",
 	"why":"Help us identify cultural heritage in Yemen at risk due to the on-going civil war",
-	"questions":[
-
+	"questionnaire":[
 		{
-			"id":1,
-			"title":"Do you think there is built heritage in this photo?",
+			"question":"Do you think there is built heritage in this photo?",
+			"key":"heritage",
 			"type":"binary",
-			"answer":{
-				"saved_as":"heritage"
-			},
-			"branch":[
-				{"yes":2},
-				{"no":"finish"}
-			]
-
-		},
-		{
-			"id":2,
-			"title":"What is the name of the site shown in this photo?",
-			"type":"text",
-			"answer":{
-				"saved_as":"name"
-			}
-
-		},
-		{
-			"id":3,
-			"title":"What is its wikipedia page?",
-			"type":"url",
-			"answer":{
-				"saved_as":"wikipedia"
+			"branch":{
+				"yes":"name",
+				"no":"end"
 			}
 		},
 		{
-			"id":4,
-			"title":"Do you see any damage to the building that is not caused by general deterioration over time?",
-			"type":"binary",
-			"answer":{
-				"saved_as":"damage"
-			}
-
+			"question":"What is the name of the site shown in this photo?",
+			"key":"name",
+			"type":"text"
 		},
-
 		{
-			"id":5,
-			"title":"Can you geo-localize the site and/or the photo?",
+			"question":"What is its wikipedia page?",
+			"key":"wikipedia",
+			"type":"url"
+		},
+		{
+			"question":"Do you see any damage to the building that is not caused by general deterioration over time?",
+			"key":"damage",
+			"type":"binary"
+		},
+		{
+			"question":"Can you geo-localize the site and/or the photo?",
+			"key":"geolocation",
 			"type":"geotagging",
-			"answer":{
-				"saved_as":"geolocation",
+			"parameters":{
 				"location":"Yemen"
 			}
 		}
